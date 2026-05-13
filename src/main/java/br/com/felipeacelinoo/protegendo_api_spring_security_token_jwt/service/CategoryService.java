@@ -60,6 +60,6 @@ public class CategoryService {
         if (categoryName == null) {
             return categoryRepository.findAll();
         }
-        return categoryRepository.findByCategoryNameContainingIgnoreCase(categoryName);
+        return categoryRepository.findByNameContainingIgnoreCase(categoryName);
     }
 }
