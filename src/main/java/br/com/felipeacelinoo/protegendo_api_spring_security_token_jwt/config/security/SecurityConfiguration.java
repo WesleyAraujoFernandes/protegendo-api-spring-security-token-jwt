@@ -26,15 +26,15 @@ public class SecurityConfiguration {
         };
 
         public static final String[] ENDPOINTS_WITH_AUTHENTICATION_REQUIRED = {
-                        "/users"
+                        "/categories/**", "/products/**"
         };
 
         public static final String[] ENDPOINTS_CUSTOMER = {
-                        "/users/test/customer"
+                        "/categories/**", "/products/**"
         };
 
         public static final String[] ENDPOINTS_ADMIN = {
-                        "/users/test/administrator"
+                        "/categories/**", "/products/**"
         };
 
         @Bean
