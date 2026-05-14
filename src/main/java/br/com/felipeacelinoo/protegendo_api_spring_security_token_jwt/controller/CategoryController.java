@@ -33,7 +33,7 @@ public class CategoryController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<CategoryResponse> findById(Long id) {
+    public ResponseEntity<CategoryResponse> findById(@PathVariable Long id) {
         return ResponseEntity.ok(categoryMapper.toResponse(categoryService.findById(id)));
     }
 
